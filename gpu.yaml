@@ -1,0 +1,18 @@
+name: GAN_training
+
+master:
+  resources:
+    vcores: 25
+    memory: 9216MiB
+    gpus: 1
+  files:
+    main.py: timeGAN.py
+    environment: *******
+  env:
+    LD_LIBRARY_PATH: "****"
+    LIB_CUDA: "******"
+    HADOOP_HDFS_HOME: "*******"
+  script: |
+    source environment/bin/activate
+    python3 main.py
+

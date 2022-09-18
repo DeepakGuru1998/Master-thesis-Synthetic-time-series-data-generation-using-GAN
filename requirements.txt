@@ -1,0 +1,7 @@
+tensorflow==2.4
+numpy
+pandas
+joblib
+dill
+sklearn
+keras
